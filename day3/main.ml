@@ -18,7 +18,6 @@ let input =
                        | '#' -> Tree
                      ) (string_to_list line) in
       (mapRow)::(readFile f)
-      (* (string_to_list line)::(readFile f) *)
     with End_of_file -> close_in f; [] in
 
   let file = (open_in "input") in
